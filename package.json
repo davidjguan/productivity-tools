@@ -1,9 +1,6 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-
-  //supposed to be the homepage not the repository
-  // "homepage":"https://github.com/davidjguan/productivity-tools",
   "homepage": "https://davidjguan.github.io/productivity-tools/",
   
 
