@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/davidjguan/productivity-tools/static/css/main.6b035bba.css",
-    "main.js": "/davidjguan/productivity-tools/static/js/main.44cf5918.js",
-    "index.html": "/davidjguan/productivity-tools/index.html",
-    "main.6b035bba.css.map": "/davidjguan/productivity-tools/static/css/main.6b035bba.css.map",
-    "main.44cf5918.js.map": "/davidjguan/productivity-tools/static/js/main.44cf5918.js.map"
+    "main.css": "/productivity-tools/static/css/main.6b035bba.css",
+    "main.js": "/productivity-tools/static/js/main.44cf5918.js",
+    "index.html": "/productivity-tools/index.html",
+    "main.6b035bba.css.map": "/productivity-tools/static/css/main.6b035bba.css.map",
+    "main.44cf5918.js.map": "/productivity-tools/static/js/main.44cf5918.js.map"
   },
   "entrypoints": [
     "static/css/main.6b035bba.css",
