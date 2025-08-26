@@ -1,6 +1,7 @@
 # Productivity Tools: Pomodoro, Task List, and Background Noise Generator
 
-![Screenshot](https://github.com/user-attachments/assets/968c494d-12d1-4094-9fde-ab109f5b26a2)
+<img width="1920" height="989" alt="image" src="https://github.com/user-attachments/assets/a5d6a654-0439-4bce-84e2-3f71a509c7d0" />
+
 
 A productivity web app built with **React** that includes a Pomodoro timer, a task list, and a background noise generator. The interface is responsive and supports dark mode.
 
