@@ -2,8 +2,8 @@ import {useState, useEffect} from 'react';
 import "./index.css";
 
 function Pomodoro() {
-    const buttonSound = new Audio("/switch-button-106349.mp3");
-    const doneSound = new Audio("/din-ding-89718.mp3");
+    const buttonSound = new Audio(process.env.PUBLIC_URL + "/switch-button-106349.mp3");
+    const doneSound = new Audio(process.env.PUBLIC_URL + "/din-ding-89718.mp3");
     doneSound.volume = 0.5; 
 
     // Play sound only if not muted
@@ -19,18 +19,20 @@ function Pomodoro() {
             doneSound.play();
         }
     }
-
+    //for testing
     const breakTime = 4 * 1000;
-    // const breakTime = 5 * 60 * 1000;
     const workTime = 6 * 1000;
-    // const workTime = 25 * 6 * 1000;
+
+    // const breakTime = 5 * 60 * 1000;
+    // const workTime = 25 * 60 * 1000;
+
     const [inBreak, setInBreak] = useState(false);
     const [isRunning, setIsRunning] = useState(false);
     const [time, setTime] = useState(workTime);
     const [pomodoroCount, setPomodoroCount] = useState(0);
     const [muted, setMuted] = useState(false);
     useEffect(() => {
-        // Softer green and red shades
+
         document.body.style.backgroundColor = inBreak ? '#b2f2bb' : '#ffb3b3';
         return () => {
             document.body.style.backgroundColor = '';
@@ -80,7 +82,7 @@ function Pomodoro() {
         setIsRunning(false);
         setTime(inBreak ? breakTime : workTime);
     }
-    function tomatoes(playSound = false){
+    function tomatoes(){
         let output = [];
         for (let i = 0; i < pomodoroCount; i++) {
             output.push("🍅");

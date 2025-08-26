@@ -4,7 +4,6 @@ function TaskList() {
     // localStorage.clear(); // Clear localStorage for testing purposes
     const [tasks, setTasks] = useState(localStorage.getItem("currentTasks") ? JSON.parse(localStorage.getItem("currentTasks")) : []);
     const [completedTasks, setCompletedTasks] = useState(localStorage.getItem("completedTasks") ? JSON.parse(localStorage.getItem("completedTasks")) : []);
-    const num = 3;
 
     function addTask(event) {
         event.preventDefault();
@@ -58,9 +57,9 @@ function TaskList() {
     return(
         <div className="task-list-container">
             <h1>Task list</h1>
-            <p>{localStorage.getItem("currentTasks")} stored</p>
+            {/* <p>{localStorage.getItem("currentTasks")} stored</p> */}
             <form onSubmit={addTask} className="task-list-form">
-                <input name="taskInput" type="text" placeholder="Add a new task" autoComplete="off" />
+                <input name = "taskInput" className="taskInput" type="text" placeholder="Add a new task" autoComplete="off" />
                 <button className = "taskSubmit" type="submit">Add</button>
             </form>
             <div className="task-list">
